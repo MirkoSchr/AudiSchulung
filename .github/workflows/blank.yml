@@ -30,3 +30,9 @@ jobs:
 
     - name: Run the application
       run: ./AudiSchulung
+
+    - name: Build the application
+      run: g++ -o AudiSchulung test2.cpp
+
+    - name: Run the application
+      run: ./AudiSchulung
