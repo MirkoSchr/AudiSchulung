@@ -36,3 +36,9 @@ jobs:
 
     - name: Run the application
       run: ./AudiSchulung
+
+      - name: Run clang-tidy
+      run: clang-tidy main.cpp -- -std=c++17
+
+    - name: Run the tests
+      run: ./HelloWorld && echo "All tests passed!"
