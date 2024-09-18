@@ -24,20 +24,8 @@ jobs:
 
     - name: Run the application
       run: ./AudiSchulung
-      
-    - name: Build the application
-      run: g++ -o AudiSchulung test1.cpp
-
-    - name: Run the application
-      run: ./AudiSchulung
-
-    - name: Build the application
-      run: g++ -o AudiSchulung test2.cpp
-
-    - name: Run the application
-      run: ./AudiSchulung
-
-      - name: Run clang-tidy
+    
+    - name: Run clang-tidy
       run: clang-tidy main.cpp -- -std=c++17
 
     - name: Run the tests
